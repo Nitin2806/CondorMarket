@@ -60,3 +60,58 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+/* Media query for tablet view (1140px) */
+@media (max-width: 1140px) {
+    .footer-logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo p{
+        font-size: 36px;
+    }
+
+    .footer-links{
+        gap: 30px;
+        font-size: 18px;
+    }
+
+    .footer-copyright{
+        font-size: 18px;
+        gap: 20px;
+    }
+}
+
+/* Media query for mobile view (720px) */
+@media (max-width: 720px) {
+    .footer-logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo p{
+        font-size: 28px;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .footer-social-icon{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-copyright{
+        font-size: 16px;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-copyright hr{
+        width: 90%;
+    }
+}

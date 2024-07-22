@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import hero_image from '../Assets/profile.png';
+import hero_image from '../Assets/hero_image.png';
 import arrow_icon from '../Assets/arrow.png';
 
 const Hero = () => {

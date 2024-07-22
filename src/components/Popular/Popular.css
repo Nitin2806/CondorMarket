@@ -24,3 +24,42 @@
     display: flex;
     gap: 30px;
 }
+
+/* Tablet view (1140px) */
+@media (max-width: 1140px) {
+    .popular{
+        padding-bottom: 20%;
+    }
+    .popular h1{
+        font-size: 40px;
+    }
+
+    .popular hr{
+        width: 150px;
+        height: 5px;
+    }
+
+    .popular-item{
+        flex-direction: row;
+        gap: 20px;
+        size: 30%;
+    }
+}
+
+/* Mobile view (720px) */
+@media (max-width: 720px) {
+    .popular h1{
+        font-size: 30px;
+    }
+
+    .popular hr{
+        width: 100px;
+        height: 4px;
+    }
+
+    .popular-item{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
