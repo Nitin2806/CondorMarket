@@ -43,6 +43,7 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
   },
   {
     id: 2,
@@ -51,6 +52,8 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 3,
@@ -59,6 +62,7 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
   },
   {
     id: 4,
@@ -67,6 +71,7 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
   },
   {
     id: 5,
@@ -75,6 +80,8 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 6,
@@ -83,6 +90,8 @@ let all_product = [
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 7,
@@ -91,6 +100,8 @@ let all_product = [
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 8,
@@ -99,6 +110,8 @@ let all_product = [
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 9,
@@ -107,6 +120,8 @@ let all_product = [
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 10,
@@ -115,6 +130,8 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 11,
@@ -123,6 +140,8 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 12,
@@ -131,6 +150,8 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse features a stylish design with delicate flutter sleeves and a sophisticated overlap collar. The striped pattern adds a touch of elegance, while the peplum hem accentuates the waist, creating a flattering silhouette. This versatile blouse is perfect for both casual and formal occasions, making it a must-have addition to any wardrobe.",
+
   },
   {
     id: 13,
@@ -139,6 +160,7 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 14,
@@ -147,6 +169,7 @@ let all_product = [
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 15,
@@ -155,6 +178,7 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 16,
@@ -163,6 +187,7 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 17,
@@ -171,6 +196,7 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 18,
@@ -179,6 +205,7 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 19,
@@ -187,6 +214,7 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 20,
@@ -195,6 +223,7 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 21,
@@ -203,6 +232,7 @@ let all_product = [
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 22,
@@ -211,6 +241,7 @@ let all_product = [
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 23,
@@ -219,6 +250,7 @@ let all_product = [
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 24,
@@ -227,6 +259,7 @@ let all_product = [
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "The Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket offers a sleek and modern look with its slim-fit design and solid green color. Featuring a full-zip closure and convenient zippered pockets, this bomber jacket combines style and functionality. Perfect for layering, it adds a trendy touch to any casual or semi-formal outfit.",
   },
   {
     id: 25,
@@ -235,6 +268,7 @@ let all_product = [
     image: p25_img,
     new_price: 1699.9,
     old_price: 1749.9,
+    description: "The Samsung Galaxy S24 Ultra boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Galaxy S24 Ultra is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 26,
@@ -243,6 +277,7 @@ let all_product = [
     image: p26_img,
     new_price: 1200.0,
     old_price: 1250.5,
+    description: "The Samsung Galaxy S24 + Ultra boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Samsung Galaxy S24 + is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 27,
@@ -251,6 +286,7 @@ let all_product = [
     image: p27_img,
     new_price: 999.9,
     old_price: 1050.5,
+    description: "The Samsung Galaxy S24 Ultra boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Samsung Galaxy S24 is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 28,
@@ -259,6 +295,7 @@ let all_product = [
     image: p28_img,
     new_price: 1399.0,
     old_price: 1450.5,
+    description: "The Samsung Galaxy S23 Ultra boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Samsung Galaxy S23 Ultra is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 29,
@@ -267,6 +304,7 @@ let all_product = [
     image: p29_img,
     new_price: 1699.9,
     old_price: 1750.5,
+    description: "The Apple iPhone 15 Pro Max boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Apple iPhone 15 Pro Max is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 30,
@@ -275,6 +313,7 @@ let all_product = [
     image: p30_img,
     new_price: 1200.0,
     old_price: 1250.5,
+    description: "The Apple iPhone 15 Pro boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Apple iPhone 15 Pro is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 31,
@@ -283,6 +322,7 @@ let all_product = [
     image: p31_img,
     new_price: 999.0,
     old_price: 1050.5,
+    description: "The Apple iPhone 15 Plus boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Apple iPhone 15 Plus is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 32,
@@ -291,6 +331,7 @@ let all_product = [
     image: p32_img,
     new_price: 899.0,
     old_price: 950.5,
+    description: "The Apple iPhone 15 boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Apple iPhone 15 is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 33,
@@ -299,6 +340,7 @@ let all_product = [
     image: p33_img,
     new_price: 1000.0,
     old_price: 1050.5,
+    description: "The Google Pixel 8 Pro boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Google Pixel 8 Pro is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 34,
@@ -307,6 +349,7 @@ let all_product = [
     image: p34_img,
     new_price: 899.0,
     old_price: 950.5,
+    description: "The Google Pixel 8 boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Google Pixel 8 is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 35,
@@ -315,6 +358,7 @@ let all_product = [
     image: p35_img,
     new_price: 799.0,
     old_price: 850.5,
+    description: "The Google Pixel 8a boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Google Pixel 8a is designed to meet the demands of modern users, from gaming to productivity.",
   },
   {
     id: 36,
@@ -323,6 +367,7 @@ let all_product = [
     image: p36_img,
     new_price: 999.0,
     old_price: 1025.5,
+    description: "The Google Pixel 7 Pro boasts a stunning display, cutting-edge camera technology, and powerful performance, making it a top-tier choice for smartphone enthusiasts. Its advanced camera system captures incredible detail and clarity, even in low light, while the high-resolution screen offers an immersive viewing experience. With a sleek design and robust battery life, the Google Pixel 7 Pro is designed to meet the demands of modern users, from gaming to productivity.",
   },
 ];
 
