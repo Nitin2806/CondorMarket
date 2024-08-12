@@ -48,6 +48,9 @@
 
 /* Mobile view (720px) */
 @media (max-width: 720px) {
+    .popular{
+        margin-top: 50px;
+    }
     .popular h1{
         font-size: 30px;
     }
@@ -60,6 +63,7 @@
     .popular-item{
         display: flex;
         flex-direction: column;
+        margin-right: 120px;
         gap: 15px;
     }
 }

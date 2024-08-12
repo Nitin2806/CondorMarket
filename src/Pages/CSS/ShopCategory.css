@@ -64,6 +64,10 @@
 
 /* Mobile view (720px) */
 @media (max-width: 720px) {
+    .shopcategory-sort{
+        margin-top: 10px;
+    }
+    
     .shopcategory-indexSort {
         margin: 0px 20px;
         flex-direction: column;

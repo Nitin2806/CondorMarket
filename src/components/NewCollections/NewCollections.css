@@ -45,6 +45,7 @@
 @media (max-width: 720px) {
     .collections{
         grid-template-columns: 1fr;
+        margin-right: 120px;
     }
 
     .new-collections h1{
