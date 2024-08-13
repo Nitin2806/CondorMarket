@@ -25,3 +25,34 @@
     margin-top: 50px;
     gap: 30px;
 }
+
+/* Tablet view */
+@media (max-width: 1140px) {
+    .collections{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .new-collections h1{
+        font-size: 40px;
+    }
+
+    .new-collections hr{
+        width: 150px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 720px) {
+    .collections{
+        grid-template-columns: 1fr;
+        margin-right: 120px;
+    }
+
+    .new-collections h1{
+        font-size: 30px;
+    }
+
+    .new-collections hr{
+        width: 100px;
+    }
+}
