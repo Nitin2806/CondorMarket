@@ -14,7 +14,7 @@ const Register = () => {
     lastName: '',
     dateOfBirth: '',
     address: '',
-    accountType: ''
+    accountType: 'customer'
   });
   const [error, setError] = useState('');
   const navigate = useNavigate(); 
@@ -48,7 +48,6 @@ const Register = () => {
             <input type="text" name="lastName" placeholder='Last Name' value={formData.lastName} onChange={handleChange} />
             <input type="date" name="dateOfBirth" placeholder='Date of Birth' value={formData.dateOfBirth} onChange={handleChange} />
             <input type="text" name="address" placeholder='Address' value={formData.address} onChange={handleChange} />
-            <input type="text" name="accountType" placeholder='Account Type' value={formData.accountType} onChange={handleChange} />
           </div>
           <button type="submit">Continue</button>
           {error && <p className='error'>{error}</p>}
