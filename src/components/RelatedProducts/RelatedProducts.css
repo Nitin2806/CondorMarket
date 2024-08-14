@@ -1,34 +1,39 @@
-.relatedproducts{
+.relatedproducts {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    height: 90vh;
+    gap: 5px;
 }
+.header{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-.relatedproducts h1{
+}
+.relatedproducts h1 {
     color: #171717;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
 
-.relatedproducts hr{
+.relatedproducts hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
 
-.relatedproducts-item{
-    margin-top: 50px;
+.relatedproducts-item {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 5px;
+    margin-top: 50px;
 }
 
-/* Tablet view (1140px) */
 @media (max-width: 1140px) {
     .relatedproducts {
-        height: auto;
         gap: 8px;
     }
 
@@ -42,22 +47,17 @@
     }
 
     .relatedproducts-item {
-        flex-direction: column;
-        align-items: center;
         gap: 20px;
     }
 }
 
-/* Mobile view (720px) */
 @media (max-width: 720px) {
     .relatedproducts {
-        height: auto;
-        width: auto;
         gap: 6px;
     }
 
     .relatedproducts h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .relatedproducts hr {
@@ -66,11 +66,34 @@
     }
 
     .relatedproducts-item {
-        display: flex;
-        flex-direction: start;
-        padding-right: 70px;
+        gap: 10px;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
-        transform: scale(0.8);
+        transform: scale(0.9);
+    }
+
+    .relatedproducts-item > div {
+        flex: 0 0 48%; 
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .relatedproducts {
+        gap: 4px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 15px;
+    }
+
+    .relatedproducts hr {
+        width: 80px;
+        height: 3px;
+    }
+
+    .relatedproducts-item > div {
+        flex: 0 0 100%; 
     }
 }

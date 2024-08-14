@@ -23,6 +23,7 @@
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* Tablet view (1140px) */
@@ -63,7 +64,7 @@
     .popular-item{
         display: flex;
         flex-direction: column;
-        margin-right: 120px;
+        grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
 }

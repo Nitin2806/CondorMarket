@@ -50,7 +50,7 @@
 @media (max-width: 1140px) {
     .offers {
         height: auto;
-        width: 85%;
+        width: 100%;
         padding-top: 20%;
         padding-bottom: 20%;
         
@@ -78,7 +78,7 @@
 /* Mobile View */
 @media (max-width: 720px) {
     .offers {
-        width: 90%;
+        width: 100%;
         padding: 5px 20px;
         flex-direction: column;
         height: auto;    

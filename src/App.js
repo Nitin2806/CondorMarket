@@ -11,6 +11,8 @@ import electronic_banner from './components/Assets/banner_electronics.jpg'
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import OrderConfirmation from './Pages/OrderConfirmation';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -23,12 +25,15 @@ function App() {
         <Route path='/womens' element={<ShopCategory banner={women_banner} category="Women"/>}/>
         <Route path='/electronics' element={<ShopCategory banner={electronic_banner} category="Electronics"/>}/>
         <Route path='/product' element={<Product/>}>
-          <Route path=':productId' element={<Product/>}/>
+        <Route path=':productId' element={<Product/>}/>
         </Route>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path="/order-confirmation" element={<OrderConfirmation/>} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+
       </Routes>
       <Footer/>
       </BrowserRouter>

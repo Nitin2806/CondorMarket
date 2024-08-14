@@ -15,7 +15,7 @@ const Hero = () => {
             <h3>for everyone !!!</h3>
             <div className="hero-latest-btn">
                 <div><Link style={{ textDecoration: 'none', color:'white'}} to='/mens'>Latest Collection</Link></div>
-                <img src={arrow_icon} alt="" />
+                <img src={arrow_icon} alt="icon" />
             </div>
         </div>
     </div>

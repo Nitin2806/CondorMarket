@@ -1,9 +1,10 @@
 .descriptionbox {
-    margin: 120px 30px;
+    margin: 50px 30px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: fit-content;
     transition: box-shadow 0.3s ease;
 }
 
@@ -18,15 +19,11 @@
 }
 
 .descriptionbox-nav-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 16px;
     font-weight: 600;
-    width: 171px;
-    height: 70px;
     border-right: 1px solid #d0d0d0;
     cursor: pointer;
+    padding: 10px 10px 10px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -46,12 +43,7 @@
 .descriptionbox-description {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 48px;
-    padding-bottom: 70px;
-    background-color: #ffffff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 28px 28px 28px 28px;
 }
 
 .descriptionbox-description h3 {
@@ -127,14 +119,20 @@
     .descriptionbox-nav-box {
         width: 100%;
         height: auto;
-        padding: 12px 0;
+        padding: 12px 12px;
         font-size: 14px;
         border-right: none;
         border-bottom: 1px solid #d0d0d0;
     }
+    .review-user{
+        font-size: 16px;
+    }
 
     .descriptionbox-description {
         padding: 20px;
-        gap: 15px;
+        font-size: 20px;
+    }
+    .descriptionbox-description p {
+        font-size: 15px;
     }
 }

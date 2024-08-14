@@ -3,8 +3,6 @@ import './Popular.css';
 import axios from 'axios';
 import Item from '../Item/Item';
 const apiURL = process.env.REACT_APP_API_URL;
-console.log(apiURL)
-
 
 const Popular = () => {
   const [products, setProducts] = useState([]);

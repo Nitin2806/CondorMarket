@@ -45,8 +45,7 @@
 /* Mobile view */
 @media (max-width: 720px) {
     .collections{
-        grid-template-columns: 1fr;
-        margin-right: 120px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .new-collections h1{

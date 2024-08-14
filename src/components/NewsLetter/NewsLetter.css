@@ -56,7 +56,7 @@
 /* Media Query for Tablet View */
 @media (max-width: 1024px) {
     .newsletter {
-        width: 85%;
+        width: 100%;
         padding: 0px 70px;
         padding-top: 20%;
     }
@@ -89,7 +89,7 @@
 /* Media Query for Mobile View */
 @media (max-width: 720px) {
     .newsletter {
-        width: 70%;
+        width: 100%;
         padding: 30px 60px;
     }
 

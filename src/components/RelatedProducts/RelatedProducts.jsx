@@ -30,8 +30,10 @@ const RelatedProducts = ({ product }) => {
 
   return (
     <div className='relatedproducts'>
+      <div className='header'>
       <h1>Related Products</h1>
       <hr />
+      </div>
       <div className="relatedproducts-item">
         {relatedProducts.length > 0 ? (
           relatedProducts.map((item) => (
