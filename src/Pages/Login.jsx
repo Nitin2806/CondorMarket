@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './CSS/LoginSignup.css'
-const apiURL = process.env.REACT_APP_API_URL;
+import { Link } from 'react-router-dom'; 
+import './CSS/LoginSignup.css';
 
+const apiURL = process.env.REACT_APP_API_URL;
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -29,17 +30,31 @@ const Login = () => {
   };
 
   return (
-    <div className='loginsignup'>
-      <div className="loginsignup-container">
+    <div className='login'>
+      <div className="login-container">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <div className="loginsignup-fields">
-            <input type="email" name="email" placeholder='Email Address' value={formData.email} onChange={handleChange} />
-            <input type="password" name="password" placeholder='Password' value={formData.password} onChange={handleChange} />
+            <input
+              type="email"
+              name="email"
+              placeholder='Email Address'
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder='Password'
+              value={formData.password}
+              onChange={handleChange}
+            />
           </div>
           <button type="submit">Login</button>
           {error && <p className='error'>{error}</p>}
-          <p className='loginsignup-login'>Don't have an Account? <span onClick={() => window.location.href = '/register'}>Sign Up</span></p>
+          <p className='loginsignup-login'>
+            Don't have an Account? <Link to='/register'>Sign Up</Link> 
+          </p>
         </form>
       </div>
     </div>

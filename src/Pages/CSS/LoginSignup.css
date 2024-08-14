@@ -4,6 +4,12 @@
     padding-top: 100px;
     padding-bottom: 80vh;
 }
+.login {
+    width: 100%;
+    background: linear-gradient(180deg, #9edbf6, #e1ffea22 60%);
+    padding-top: 100px;
+   
+}
 
 .loginsignup-container {
     width: 580px;
@@ -12,8 +18,18 @@
     margin: auto;
     padding: 40px 60px;
 }
+.login-container {
+    width: 580px;
+    height:fit-content;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
 
 .loginsignup-container h1 {
+    margin: 20px 0px;
+}
+.login-container h1 {
     margin: 20px 0px;
 }
 
@@ -34,6 +50,17 @@
 }
 
 .loginsignup-container button {
+    width: 580px;
+    height: 72px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-container button {
     width: 580px;
     height: 72px;
     color: white;
@@ -71,7 +98,6 @@
     color: red;
 }
 
-/* Media Queries */
 @media (max-width: 1140px) {
     .loginsignup {
         padding-bottom: 20%;
@@ -82,19 +108,32 @@
         height: auto;
         padding-bottom: 30px;
     }
-
+    .login-container {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
     .loginsignup-container h1 {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 1000px; /* Set a max-width to control the width */
+        width: 100%; 
+        max-width: 1000px;
+    }
+    .login-container h1 {
+        width: 100%; 
+        max-width: 1000px;
     }
     .loginsignup-fields input {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 1000px; /* Set a max-width to control the width */
+        width: 100%;
+        max-width: 1000px; 
     }
 
     .loginsignup-container button {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 1000px; /* Set a max-width to control the width */
+        width: 100%; 
+        max-width: 1000px; 
+    }
+    .login-container button {
+        width: 100%; 
+        max-width: 1000px; 
     }
 }
 
@@ -107,16 +146,31 @@
     }
 
     .loginsignup-container h1 {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 360px; /* Set a max-width to control the width */
+        width: 100%;
+        max-width: 360px; 
+    }
+    .login-container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .login-container h1 {
+        width: 100%;
+        max-width: 360px; 
     }
     .loginsignup-fields input {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 360px; /* Set a max-width to control the width */
+        width: 100%; 
+        max-width: 360px; 
     }
 
     .loginsignup-container button {
-        width: 100%; /* Full width by default on mobile */
-        max-width: 360px; /* Set a max-width to control the width */
+        width: 100%; 
+        max-width: 360px; 
+    }
+    .login-container button {
+        width: 100%; 
+        max-width: 360px; 
     }
 }
