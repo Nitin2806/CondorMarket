@@ -7,13 +7,14 @@ const Offers = () => {
   return (
     <div className='offers'>
         <div className="offers-left">
-            <h1>Exclusive</h1>
-            <h1>Offers For You</h1>
-            <p>only on Best Sellers</p>
+          <div className='offer-text'>
+            <h1>Exclusive Offers For You</h1>
+            </div>
+            <h2>Only on Best Sellers</h2>
             <button><Link style={{ textDecoration: 'none', color:'white'}} to='/womens'>Check Now</Link></button>
         </div>
         <div className="offers-right">
-            <img src={exclusive_image} alt="" />
+            <img src={exclusive_image} alt="exclusive" />
         </div>
     </div>
   )

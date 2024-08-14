@@ -16,7 +16,7 @@
 
 .offers-left h1 {
     color: black;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -47,9 +47,6 @@
     padding-top: 50px;
 }
 
-/* Media Queries */
-
-/* Tablet View */
 @media (max-width: 1140px) {
     .offers {
         height: auto;
@@ -82,23 +79,22 @@
 @media (max-width: 720px) {
     .offers {
         width: 100%;
-        padding: 0px 20px;
+        padding: 5px 20px;
         flex-direction: column;
-        height: auto;
-        margin-bottom: 100px;
+        height: auto;    
     }
 
     .offers-left h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    .offers-left p {
+    .offers-left h2 {
         font-size: 18px;
     }
 
     .offers-left button {
         width: 200px;
-        height: 50px;
+        height: 40px;
         font-size: 18px;
     }
 

@@ -1,5 +1,4 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './Pages/Home';
 import ShopCategory from './Pages/ShopCategory';

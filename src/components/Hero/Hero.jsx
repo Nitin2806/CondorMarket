@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         <div className="hero-right">
             <h2>Summer Collection</h2>
-            <p>for everyone !!!</p>
+            <h3>for everyone !!!</h3>
             <div className="hero-latest-btn">
                 <div><Link style={{ textDecoration: 'none', color:'white'}} to='/mens'>Latest Collection</Link></div>
                 <img src={arrow_icon} alt="" />
