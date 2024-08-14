@@ -46,7 +46,11 @@ const Register = () => {
             <input type="password" name="password" placeholder='Password' value={formData.password} onChange={handleChange} />
             <input type="text" name="firstName" placeholder='First Name' value={formData.firstName} onChange={handleChange} />
             <input type="text" name="lastName" placeholder='Last Name' value={formData.lastName} onChange={handleChange} />
-            <input type="date" name="dateOfBirth" placeholder='Date of Birth' value={formData.dateOfBirth} onChange={handleChange} />
+            <div className="loginsignup-field-group">
+              <label htmlFor="dateOfBirth">Date of Birth:</label>
+              <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder='Date of Birth' value={formData.dateOfBirth} onChange={handleChange} />
+            </div>
+
             <input type="text" name="address" placeholder='Address' value={formData.address} onChange={handleChange} />
           </div>
           <button type="submit">Continue</button>

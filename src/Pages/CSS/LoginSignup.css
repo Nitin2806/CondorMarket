@@ -4,7 +4,15 @@
     background: linear-gradient(180deg, #9edbf6, #e1ffea22 60%);
     padding-top: 100px;
 }
-
+.loginsignup-field-group {
+    margin-bottom: 1rem;
+  }
+  
+  .loginsignup-field-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
 .loginsignup-container,
 .login-container {
     max-width: 580px;
@@ -100,4 +108,13 @@
         height: 45px;
         font-size: 16px;
     }
+    .loginsignup-field-group {
+        margin-bottom: 1rem;
+      }
+      
+      .loginsignup-field-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: normal;
+      }
 }
