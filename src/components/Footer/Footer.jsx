@@ -22,18 +22,18 @@ const Footer = () => {
             </ul>
             <div className="footer-social-icon">
                 <div className="footer-icons-container">
-                    <img src={instagram_icon} alt="" />
+                    <img src={instagram_icon} alt="insta" />
                 </div>
                 <div className="footer-icons-container">
-                    <img src={x_icon} alt="" />
+                    <img src={x_icon} alt="x" />
                 </div>
                 <div className="footer-icons-container">
-                    <img src={pinterest_icon} alt="" />
+                    <img src={pinterest_icon} alt="pin" />
                 </div>
             </div>
         <div className="footer-copyright">
             <hr />
-            <p>Copyright @2024 - All rights reserved</p>
+            <p>&copy; 2024 Condor Market. All rights reserved.</p>
         </div>
     </div>
   )

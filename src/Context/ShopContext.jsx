@@ -1,59 +1,75 @@
-import React, { createContext, useState } from "react";
-import all_product from "../components/Assets/all_product";
+import React, { createContext, useState, useEffect } from "react";
+import axios from 'axios';
 
 export const ShopContext = createContext(null);
 
-const getDefaultCart = () => {
-    let cart = {};
-    for (let index = 0; index < all_product.length + 1; index++) {
-        cart[index] = 0;
-    }
-    return cart;
-};
-
 const ShopContextProvider = (props) => {
-    const [cartItems, setCartItems] = useState(getDefaultCart());
+    const [cartItems, setCartItems] = useState({});
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get(`http://localhost:5000/products`);
+                setProducts(response.data);
+                setCartItems(getDefaultCart(response.data));
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    const getDefaultCart = (products) => {
+        let cart = {};
+        products.forEach(product => {
+            cart[product._id] = 0;
+        });
+        return cart;
+    };
 
     const addToCart = (itemId) => {
-        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+        setCartItems((prev) => ({ ...prev, [itemId]: (prev[itemId] || 0) + 1 }));
     };
 
     const removeFromCart = (itemId) => {
-        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+        setCartItems((prev) => ({ ...prev, [itemId]: Math.max((prev[itemId] || 0) - 1, 0) }));
+    };
+
+    const clearCart = () => {
+        setCartItems(getDefaultCart(products));
     };
 
     const getTotalCartAmount = () => {
         let totalAmount = 0;
-        for (const item in cartItems) {
-            if (cartItems[item] > 0) {
-                let itemInfo = all_product.find((product) => product.id === Number(item));
+        Object.entries(cartItems).forEach(([itemId, quantity]) => {
+            if (quantity > 0) {
+                const itemInfo = products.find((product) => product._id === itemId);
                 if (itemInfo) {
-                    totalAmount += itemInfo.new_price * cartItems[item];
+                    totalAmount += itemInfo.new_price * quantity;
                 }
             }
-        }
+        });
         return totalAmount;
     };
 
-    const getTotalCartItem = ()=>{
-        let totalItem = 0;
-        for(const item in cartItems)
-        {
-            if(cartItems[item]>0)
-            {
-                totalItem+= cartItems[item];
-            }
-        }
-        return totalItem;
-    }
+    const getTotalCartItem = () => {
+        return Object.values(cartItems).reduce((total, quantity) => total + quantity, 0);
+    };
 
     const contextValue = {
+        loading,
         getTotalCartItem,
         getTotalCartAmount,
-        all_product,
+        all_product: products,
         cartItems,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        clearCart 
     };
 
     return (

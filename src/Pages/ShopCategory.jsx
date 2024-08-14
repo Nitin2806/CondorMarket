@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   const [sortOption, setSortOption] = useState('default');
   const [visibleProducts, setVisibleProducts] = useState(12);
 
-  const filteredProducts = all_product.filter((item) => item.category === props.category);
+  const filteredProducts = all_product.filter((item) => item.category == props.category);
 
   const sortedProducts = filteredProducts.sort((a, b) => {
     if (sortOption === 'priceLowToHigh') {
@@ -17,7 +17,7 @@ const ShopCategory = (props) => {
     } else if (sortOption === 'priceHighToLow') {
       return b.new_price - a.new_price;
     } else {
-      return 0; // No sorting applied
+      return 0; 
     }
   });
 
@@ -39,12 +39,11 @@ const ShopCategory = (props) => {
             <option value="priceLowToHigh">Price: Low to High</option>
             <option value="priceHighToLow">Price: High to Low</option>
           </select>
-          
         </div>
       </div>
       <div className="shopcategory-products">
         {sortedProducts.slice(0, visibleProducts).map((item, i) => (
-          <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
+          <Item key={i} id={item.id} name={item.name} image={item.images[0]} new_price={item.new_price} old_price={item.old_price} />
         ))}
       </div>
       {visibleProducts < filteredProducts.length && (
