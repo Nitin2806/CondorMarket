@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState,useEffect } from 'react';
 import './ProductDisplay.css';
 import star_icon from '../Assets/star_icon.png';
 import star_dull_icon from '../Assets/star_dull_icon.png';
@@ -10,6 +10,10 @@ const ProductDisplay = (props) => {
     const { addToCart } = useContext(ShopContext);
     const navigate = useNavigate();
     const [mainImage, setMainImage] = useState(product.images[0]);
+
+    useEffect(() => {
+        setMainImage(product.images[0]);
+    }, [product]);
 
     const handleAddToCart = () => {
         const token = localStorage.getItem('token');

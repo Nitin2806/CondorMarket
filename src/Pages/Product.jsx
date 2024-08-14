@@ -18,6 +18,7 @@ const Product = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(`${apiURL}/products/${productId}`);
+        console.log(productId)
         setProduct(response.data);
         setLoading(false);
       } catch (err) {
@@ -29,6 +30,7 @@ const Product = () => {
     fetchProduct();
   }, [productId]);
 
+  console.log(product)
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
   if (!product) return <p>Product not found</p>;
