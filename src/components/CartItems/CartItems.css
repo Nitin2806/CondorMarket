@@ -1,5 +1,5 @@
 .cartitems{
-    margin: 100px 170px;
+    margin: 50px 100px;
 }
 
 .cartitems hr{
@@ -12,8 +12,8 @@
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 75px;
-    padding: 20px 0px;
+    gap: 20px;
+    padding: 20px 0;
     color: #454545;
     font-size: 18px;
     font-weight: 600;
@@ -29,39 +29,43 @@
 }
 
 .cartitems-remove-icon{
-    width: 15px;
-    margin: 0px 40px;
+    width: 20px;
+    margin: 0 10px;
     cursor: pointer;
 }
 
 .cartitems-quantity{
-    width: 64px;
-    height: 50px;
+    width: 50px;
+    height: 40px;
     border: 2px solid #ebebeb;
     background: #fff;
+    text-align: center;
 }
 
 .cartitems-down{
     display: flex;
-    margin: 100px 0px;
+    justify-content: space-between;
+    margin: 50px 0;
+    flex-wrap: wrap;
 }
 
 .cartitems-total{
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
-    gap: 40px;
+    margin-right: 20px;
+    gap: 20px;
+    min-width: 250px;
 }
 
 .cartitems-total-item{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
 .cartitems-total button{
-    width: 262px;
+    width: 100%;
     height: 58px;
     outline: none;
     border: none;
@@ -70,12 +74,18 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cartitems-total button:hover {
+    background: #e04d4d;
 }
 
 .cartitems-promocode{
     flex: 1;
     font-size: 16px;
     font-weight: 500;
+    min-width: 250px;
 }
 
 .cartitems-promocode p{
@@ -83,7 +93,8 @@
 }
 
 .cartitems-promobox{
-    width: 504px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 15px;
     padding-left: 20px;
     height: 58px;
@@ -95,13 +106,13 @@
     outline: none;
     background: transparent;
     font-size: 16px;
-    width: 330px;
-    height: 50px;
+    width: 70%;
+    height: 100%;
 }
 
 .cartitems-promobox button{
-    width: 170px;
-    height: 58px;
+    width: 30%;
+    height: 100%;
     font-size: 16px;
     background: black;
     color: white;
@@ -111,34 +122,31 @@
 /* Media query for tablet view (1140px) */
 @media only screen and (max-width: 1140px) {
     .cartitems {
-        margin: 50px 50px;
+        margin: 20px 40px;
     }
 
     .cartitems-format-main {
         grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-        gap: 50px;
+        gap: 20px;
         font-size: 16px;
     }
 
     .cartitems-total {
-        margin-right: 50px;
-        gap: 30px;
-    }
-
-    .cartitems-total button {
-        width: 100%;
+        margin-right: 0;
+        gap: 15px;
     }
 
     .cartitems-promobox {
         width: 100%;
+        padding-left: 10px;
     }
 
     .cartitems-promobox input {
-        width: 60%;
+        width: 65%;
     }
 
     .cartitems-promobox button {
-        width: 40%;
+        width: 35%;
     }
 }
 
@@ -150,54 +158,32 @@
 
     .cartitems-format-main {
         grid-template-columns: 1fr 2fr 1fr;
-        gap: 20px;
+        gap: 10px;
         font-size: 14px;
     }
 
     .cartitems-remove-icon {
-        margin: 0px 20px;
+        margin: 0;
     }
 
     .cartitems-quantity {
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
     }
 
     .cartitems-down {
         flex-direction: column;
-        margin: 50px 8px;
-        margin-bottom: 130px;
+        align-items: center;
+        margin: 20px 0;
     }
 
-    .cartitems-total {
+    .cartitems-total, .cartitems-promocode {
+        width: 100%;
         margin-right: 0;
-        gap: 20px;
-        width: 100%;
+        gap: 15px;
     }
 
-    .cartitems-total button {
-        width: 100%;
-    }
-
-    .cartitems-promocode {
-        margin-top: 20px;
+    .cartitems-promobox input, .cartitems-promobox button {
         font-size: 14px;
-    }
-
-    .cartitems-promobox {
-        width: 100%;
-        padding-left: 10px;
-    }
-
-    .cartitems-promobox input {
-        width: 60%;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    .cartitems-promobox button {
-        width: 40%;
-        font-size: 14px;
-        margin-bottom: 30px;
     }
 }
