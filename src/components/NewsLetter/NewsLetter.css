@@ -89,8 +89,8 @@
 /* Media Query for Mobile View */
 @media (max-width: 720px) {
     .newsletter {
-        width: 100%;
-        padding: 0px 30px;
+        width: 70%;
+        padding: 30px 60px;
     }
 
     .newsletter h1 {
