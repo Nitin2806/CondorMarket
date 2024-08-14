@@ -46,7 +46,7 @@ const CartItems = () => {
   
       console.log('Order Data:', orderData);
   
-      const orderResponse = await fetch('`${apiURL}/orders', {
+      const orderResponse = await fetch(`${apiURL}/orders`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

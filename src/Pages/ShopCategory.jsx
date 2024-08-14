@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   const [sortOption, setSortOption] = useState('default');
   const [visibleProducts, setVisibleProducts] = useState(12);
 
-  const filteredProducts = all_product.filter((item) => item.category == props.category);
+  const filteredProducts = all_product.filter((item) => item.category === props.category);
 
   const sortedProducts = filteredProducts.sort((a, b) => {
     if (sortOption === 'priceLowToHigh') {
@@ -27,7 +27,7 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shop-category'>
-      <img className='shopcategory-banner' src={props.banner} alt="" />
+      <img className='shopcategory-banner' src={props.banner} alt="banner" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-{Math.min(visibleProducts, filteredProducts.length)}</span> out of {filteredProducts.length} products

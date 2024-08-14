@@ -14,7 +14,7 @@ const Popular = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${apiURL}/products`); 
-        const womenProducts = response.data.filter(item => item.category == 'Women').slice(0, 4);
+        const womenProducts = response.data.filter(item => item.category === 'Women').slice(0, 4);
         setProducts(womenProducts);
       } catch (error) {
         setError('Error fetching products');
