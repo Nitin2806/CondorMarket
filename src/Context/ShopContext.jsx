@@ -1,5 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from 'axios';
+const apiURL = process.env.REACT_APP_API_URL;
+
 
 export const ShopContext = createContext(null);
 
@@ -11,7 +13,7 @@ const ShopContextProvider = (props) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/products`);
+                const response = await axios.get(`${apiURL}/products`);
                 setProducts(response.data);
                 setCartItems(getDefaultCart(response.data));
                 setLoading(false);

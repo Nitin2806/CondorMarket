@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './CartItems.css';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
+const apiURL = process.env.REACT_APP_API_URL;
+
 
 const CartItems = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart, loading, clearCart } = useContext(ShopContext);
@@ -15,7 +17,7 @@ const CartItems = () => {
   const handleCheckout = async () => {
     try {
       const userId = JSON.parse(localStorage.getItem('user')).id;
-      const userResponse = await fetch(`http://localhost:5000/users/${userId}`);
+      const userResponse = await fetch(`${apiURL}/users/${userId}`);
   
       if (!userResponse.ok) {
         throw new Error('Failed to fetch user details');
@@ -44,7 +46,7 @@ const CartItems = () => {
   
       console.log('Order Data:', orderData);
   
-      const orderResponse = await fetch('http://localhost:5000/orders', {
+      const orderResponse = await fetch('`${apiURL}/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

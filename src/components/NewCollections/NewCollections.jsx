@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './NewCollections.css';
 import axios from 'axios';
 import Item from '../Item/Item';
+const apiURL = process.env.REACT_APP_API_URL;
+
 
 const NewCollections = () => {
   const [newCollection, setNewCollection] = useState([]);
@@ -10,7 +12,7 @@ const NewCollections = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/products');
+        const response = await axios.get(`${apiURL}/products`);
         const products = response.data;
 
         // Filter products by category

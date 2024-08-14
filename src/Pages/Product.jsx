@@ -5,6 +5,8 @@ import Breadcrum from '../components/Breadcrums/Breadcrum';
 import ProductDisplay from '../components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../components/DescriptionBox/DescriptionBox';
 import RelatedProducts from '../components/RelatedProducts/RelatedProducts';
+const apiURL = process.env.REACT_APP_API_URL;
+
 
 const Product = () => {
   const [product, setProduct] = useState(null);
@@ -15,7 +17,7 @@ const Product = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/products/${productId}`);
+        const response = await axios.get(`${apiURL}/products/${productId}`);
         setProduct(response.data);
         setLoading(false);
       } catch (err) {
@@ -36,7 +38,7 @@ const Product = () => {
       <Breadcrum product={product} />
       <ProductDisplay product={product} />
       <DescriptionBox product={product} />
-      <RelatedProducts />
+      <RelatedProducts product={product} />
     </div>
   );
 };

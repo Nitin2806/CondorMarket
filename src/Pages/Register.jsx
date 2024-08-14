@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
 import './CSS/LoginSignup.css';
+const apiURL = process.env.REACT_APP_API_URL;
+
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +26,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/users/register', formData);
+      const response = await axios.post(`${apiURL}/users/register`, formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       navigate('/login');

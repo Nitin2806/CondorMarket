@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './Popular.css';
 import axios from 'axios';
 import Item from '../Item/Item';
+const apiURL = process.env.REACT_APP_API_URL;
+console.log(apiURL)
+
 
 const Popular = () => {
   const [products, setProducts] = useState([]);
@@ -10,7 +13,7 @@ const Popular = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/products'); 
+        const response = await axios.get(`${apiURL}/products`); 
         const womenProducts = response.data.filter(item => item.category == 'Women').slice(0, 4);
         setProducts(womenProducts);
       } catch (error) {

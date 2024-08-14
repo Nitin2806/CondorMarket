@@ -1,12 +1,23 @@
-.descriptionbox{
-    margin: 120px 170px;
+.descriptionbox {
+    margin: 120px 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
 }
 
-.descriptionbox-navigator{
+.descriptionbox:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.descriptionbox-navigator {
     display: flex;
+    background-color: #ffffff;
+    border-bottom: 2px solid #d0d0d0;
 }
 
-.descriptionbox-nav-box{
+.descriptionbox-nav-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,21 +25,69 @@
     font-weight: 600;
     width: 171px;
     height: 70px;
-    border: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.descriptionbox-nav-box.fade{
-    background: #FBFBFB;
+.descriptionbox-nav-box:last-child {
+    border-right: none;
+}
+
+.descriptionbox-nav-box:hover {
+    background-color: #f0f0f0;
+}
+
+.descriptionbox-nav-box.fade {
+    background-color: #fbfbfb;
     color: #555;
 }
 
-.descriptionbox-description{
+.descriptionbox-description {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid #D0D0D0;
     padding: 48px;
     padding-bottom: 70px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.descriptionbox-description h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d0d0d0;
+    padding-bottom: 10px;
+}
+
+.descriptionbox-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-user {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.review-comment {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Tablet view (1140px) */
@@ -38,7 +97,7 @@
     }
 
     .descriptionbox-navigator {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .descriptionbox-nav-box {
@@ -46,6 +105,8 @@
         height: auto;
         padding: 15px 0;
         font-size: 14px;
+        border-right: none;
+        border-bottom: 1px solid #d0d0d0;
     }
 
     .descriptionbox-description {
@@ -60,14 +121,16 @@
     }
 
     .descriptionbox-navigator {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .descriptionbox-nav-box {
         width: 100%;
         height: auto;
-        padding: 10px 0;
-        font-size: 12px;
+        padding: 12px 0;
+        font-size: 14px;
+        border-right: none;
+        border-bottom: 1px solid #d0d0d0;
     }
 
     .descriptionbox-description {
